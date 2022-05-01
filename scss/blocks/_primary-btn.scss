@@ -1,0 +1,11 @@
+.primary-btn{
+   display: inline-block;
+   padding: 17px 36px 17px 32px;
+   color: $color-grayish-dark-blue;
+   text-decoration: none;
+   border: 1px solid $color-grayish-dark-blue;
+   &:hover{
+      color: $color-very-light-grey;
+      background-color: $color-grayish-dark-blue;
+   }
+}

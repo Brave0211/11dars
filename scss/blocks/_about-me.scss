@@ -1,0 +1,150 @@
+.about-me{
+   padding-bottom: 96px;
+}
+
+.about-me__container {
+   padding-top: 243px;
+   background-image: url(../../img/hero-bg.jpg);
+   background-repeat: no-repeat;
+   background-size:cover;
+}
+
+@media /* only for retina displays */
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+    .about-me__container{
+       background-image: url(../../img/hero-bg@2x.jpg);
+    }
+}
+
+.about-me__content {
+   width: 445px;
+   margin-left: -20px;
+   padding-top: 56px;
+   padding-right: 55px;
+   background-color: $color-very-light-grey;
+}
+
+.about-me__desc {
+   margin: 0;
+   margin-bottom: 53px;
+   font-family: $font-stack;
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 50px;
+   letter-spacing: -0.446429px;
+}
+
+.about-me__btn-wrapper {
+   padding: 0;
+   border: none;
+   background-color: $color-dark-blue;
+   cursor: pointer;
+   &:hover{
+      background-color: $color-slightly-desaturated-cyan;
+      background-image: url(../../img/button-hv.svg);
+      background-repeat: no-repeat;
+      background-position: 16px center;
+   }
+}
+
+.about-me__btn {
+   display: flex;
+}
+
+.about-me__btn-img {
+   padding: 16px;
+}
+
+.about-me__btn-txt {
+   width: 152px;
+   padding-top: 17px;
+   padding-bottom: 17px;
+   text-decoration: none;
+   color:$color-light-grey;
+   text-transform: uppercase;
+}
+
+@include breakpoint-down(769px){
+   .about-me__container {
+      padding-top: 322px;
+      background-image: url(../../img/tablet-hero-bg.jpg);
+   }
+   
+   @media /* only for retina displays */
+   only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (min--moz-device-pixel-ratio: 2),
+   only screen and (min-device-pixel-ratio: 2),
+   only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (min-resolution: 192dpi),
+   only screen and (min-resolution: 2dppx) {
+       .about-me__container{
+          background-image: url(../../img/tablet-hero-bg@2x.jpg);
+       }
+   }
+   
+   .about-me__content {
+      width: 514px;
+   }
+   
+   .about-me__desc {
+      font-size: 40px;
+      line-height: 42px;
+      margin-bottom: 48px;
+   }
+}
+
+@include breakpoint-down(515px){
+   .about-me{
+      padding-bottom: 0;
+   }
+
+   .about-me__container {
+      position: relative;
+      z-index: 1;
+      padding-top: 445px;
+      background-image: url(../../img/mobile-hero-bg.jpg);
+      background-position: center;
+   }
+   
+   @media /* only for retina displays */
+   only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (min--moz-device-pixel-ratio: 2),
+   only screen and (min-device-pixel-ratio: 2),
+   only screen and (-webkit-min-device-pixel-ratio: 2),
+   only screen and (min-resolution: 192dpi),
+   only screen and (min-resolution: 2dppx) {
+       .about-me__container{
+          background-image: url(../../img/mobile-hero-bg@2x.jpg);
+       }
+   }
+   
+   .about-me__content {
+      max-width: 311px;
+      position: absolute;
+      z-index: 1;
+      top: 100%;
+      margin-left: 0;
+      padding: 0;
+      padding-top: 24px;
+   }
+   
+   .about-me__desc {
+      max-width: 311px;
+      margin-bottom: 32px;
+   }
+}
+
+@include breakpoint-down(335px){
+   .about-me__content {
+      max-width: 250px;
+   }
+   
+   .about-me__desc {
+      max-width: 250px;
+   }
+}

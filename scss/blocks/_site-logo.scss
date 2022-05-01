@@ -1,0 +1,21 @@
+.site-logo--margin {
+   margin-right: 48px;
+}
+
+.site-logo__img {
+   display: block;
+}
+
+@include breakpoint-down(587px){
+   .site-logo--margin{
+      margin-right: 20px;
+   }
+}
+
+@include breakpoint-down(433px){
+   .site-logo--margin{
+      margin-right: 0px;
+      margin-bottom: 40px;
+   }
+}
+

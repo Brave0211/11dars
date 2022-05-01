@@ -1,0 +1,105 @@
+.contact {
+   padding-bottom: 109px;
+}
+
+.contact__container {
+   display: flex;
+   justify-content: space-between;
+}
+
+.contact__title {
+   font-family: $font-stack;
+   font-weight: 700;
+   font-size: 40px;
+   line-height: 42px;
+}
+
+.contact__input-wrapper {
+   position: relative;
+   z-index: 1;
+   display: flex;
+   flex-direction: column;
+   max-width: 635px;
+}
+
+.contact__txt {
+   margin: 0;
+   margin-bottom: 8px;
+   font-weight: 700;
+   font-size: 13px;
+   line-height: 30px;
+   opacity: 0.8;
+}
+
+.contact__input{
+   width: 635px;
+   margin-bottom: 24px;
+   padding: 9px 16px 9px 16px;
+   background-color: $color-light-grey;
+   border: none;
+}
+
+.contact__input:not(:focus):not(:placeholder-shown):invalid + .contact__input-error{
+   display: block;
+}
+
+.contact__input-error{
+   position: absolute;
+   z-index: 1;
+   top: 164px;
+   display: none;
+   margin: 0;
+   padding: 5px;
+   font-weight: 700;
+   color: $color-bright-red;
+}
+
+.contact__big-input{
+   margin-bottom: 24px;
+   padding: 9px 16px 57px 16px;
+   resize: none;
+   background-color: $color-light-grey;
+   border: none;
+}
+
+.contact__btn{
+   max-width: 200px;
+   padding: 17px 24px;
+   color: $color-very-light-grey;
+   background-color: $color-grayish-dark-blue;
+   text-transform: uppercase;
+   cursor: pointer;
+   border: none;
+}
+
+@include breakpoint-down(898px){
+   .contact__container{
+      align-items: center;
+      flex-direction: column;
+   }
+}
+
+@include breakpoint-down(666px){
+   .contact__input{
+      width: 511px;
+   }
+}
+
+@include breakpoint-down(540px){
+   .contact__input{
+      width: 400px;
+   }
+}
+
+@include breakpoint-down(436px){
+   .contact__input{
+      width: 300px;
+   }
+}
+
+
+@include breakpoint-down(330px){
+   .contact__input{
+      width: 250px;
+   }
+}
